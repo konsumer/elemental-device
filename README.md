@@ -12,4 +12,4 @@ I'm still putting together ideas form these projects:
 - [pipurr](https://github.com/konsumer/pipurr)
 - [beatstep](https://github.com/konsumer/beatstep)
 
-First I'll build an initial device/emulator description that can load elementary "engine patches", and then maybe I will design some other device-types. I think coupling emulator with the loader program will make it easy to easly suport differnt types of devices, and make testing/design simpler.
+First I'll build an initial device/emulator description that can load elementary "engine patches", and then maybe I will design some other device-types. I think coupling emulator with the loader program will make it easy to easly support lots of different types of devices, and make testing/design simpler.

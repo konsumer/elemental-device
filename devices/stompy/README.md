@@ -1,6 +1,8 @@
-This is my first device/emualtor description. It's based on [pipurr](https://github.com/konsumer/pipurr).
+# stompy
 
-Think of it as a stomp-box and synth, in one.
+This is my first device/emualtor description for elemental-device. It's based on ideas from [pipurr](https://github.com/konsumer/pipurr).
+
+Think of it as a stomp-box and synth hardware platform, in one.
 
 ## hardware
 
@@ -79,6 +81,9 @@ All of the `+` pins go to 3.3V (pin 1 or 17) and `-` goes to ground (pin 6, 9, 1
 | 21                   | 13         | SW         |
 | 23                   | 14         | DT         |
 | 29                   | 21         | CLK        |
+
+
+I will need to [set these up on pi](https://lektiondestages.art.blog/2020/03/18/use-a-rotary-encoder-and-button-on-raspberry-pi-with-device-overlays/), at OS-level, so we get easy & smooth reading.
 
 
 #### audio-device
