@@ -2,7 +2,7 @@
 
 This is my first device/emualtor description for elemental-device. It's based on ideas from [pipurr](https://github.com/konsumer/pipurr).
 
-Think of it as a stomp-box and synth hardware platform, in one.
+Think of it as a stomp-box and synth hardware platform, in one. You can hook up a midi keyboard, and operate it that way, or use it as more of an effect pedal.
 
 ## hardware
 
