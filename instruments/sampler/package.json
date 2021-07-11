@@ -1,0 +1,10 @@
+{
+  "name": "elementaryinstrument-sampler",
+  "version": "0.0.0",
+  "private": true,
+  "author": "David Konsumer <konsumer@jetboystudio.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@nick-thompson/elementary": "^0.2.1"
+  }
+}
