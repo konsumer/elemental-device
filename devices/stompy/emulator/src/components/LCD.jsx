@@ -6,10 +6,7 @@ const LCDWrapper = styled.div`
 `
 
 const PixelCanvas = styled.canvas`
-  image-rendering: -moz-crisp-edges;
-  image-rendering: -webkit-crisp-edges;
   image-rendering: pixelated;
-  image-rendering: crisp-edges;
   height: calc(100% - 16px);
   width: calc(100% - 16px);
   border: 4px solid #ccc;
