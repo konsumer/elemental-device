@@ -113,4 +113,4 @@ When it powers up, it will display a nice logo (in `/boot/logo.png`), and start 
 
 You can make patches on you computer with [elementary](https://github.com/nick-thompson/elementary). Put your patches in `/boot/engines` (or `engines/` on root of SD card) and you will be able to select the patch from the main menu.
 
-I am currently working on an emulator, so you can make your engines in the comfort of yiour desktop computer.
+I am currently working on an emulator, so you can make your engines in the comfort of your desktop computer.
