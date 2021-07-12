@@ -1,4 +1,6 @@
-import React, { useRef, useEffect, useState } from 'react'
+/* global ImageData */
+
+import React, { useRef, useEffect } from 'react'
 import styled from 'styled-components'
 
 const LCDWrapper = styled.div`
@@ -13,7 +15,6 @@ const PixelCanvas = styled.canvas`
   margin: 4px;
 `
 
-
 // emulates https://www.amazon.com/gp/product/B07WPCPM5H
 // pixels is array (height * width) of 0/1/2 - black/yellow/blue
 const LCD = ({ pixels, ...props }) => {
@@ -22,7 +23,7 @@ const LCD = ({ pixels, ...props }) => {
     const canvas = canvasRef.current
     const ctx = canvas.getContext('2d')
     const pixelsRgb = new Uint8ClampedArray(128 * 64 * 4)
-    
+
     for (const i in pixels) {
       const c = pixels[i]
 
@@ -41,7 +42,7 @@ const LCD = ({ pixels, ...props }) => {
           b = 255
         }
       }
-      
+
       const p = i * 4
       pixelsRgb[p] = r
       pixelsRgb[p + 1] = g
@@ -50,7 +51,7 @@ const LCD = ({ pixels, ...props }) => {
     }
     ctx.putImageData(new ImageData(pixelsRgb, 128), 0, 0)
   }, [pixels])
-  return <LCDWrapper><PixelCanvas ref={canvasRef} width={128} height={64} {...props}/></LCDWrapper>
+  return <LCDWrapper><PixelCanvas ref={canvasRef} width={128} height={64} {...props} /></LCDWrapper>
 }
 
 export default LCD
